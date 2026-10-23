@@ -8,10 +8,84 @@ Write an article using semantic markup, header, footer, main and section. In the
 Color the header with white text on a blue background, the footer with white text on a green background, the main portion with black text o a parchment colored background. 
 Make the nouns in the header and footer have a text weight of 600, while the rest of the text has a font-weight of 400.
     -->
-        
+    <style>
+        Body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: 400;
+        }
+
+        h1, h2, h3, p {
+            font-weight: 400;
+        }
+        header {
+            color: white;
+            background-color: blue;
+            padding: 1em 2em;
+        }
+
+        footer {
+            color: white;
+            background-color: green; 
+            padding: 1em 2em; 
+        }
+        header .noun,
+        footer .noun {
+            font-weight: 600;
+    </style>
+    
 </head>
 
-<body>
+<body>c
+    <header> 
+        <h1> From <span class="noun"> Metal Typer<span/> to the <span class="noun"Web<span> </h1>
+    <p> A comparison of <span class="noun">typesetting</span>, <span class="noun">desktop publishing</span>, <span class="noun">HTML</span> and <span class="noun"> CSS</span> </p>
+    </header>
+
+    <main>
+        <section>
+            <h2> Old Fashioned Typesetting</h2>
+            <p>
+                Traditional typesetting was a physical craft.
+                A typesetter picked individual pieces of metal type, one letter at a time, and arranged them in a frame to form lines, paragraphs and pages. 
+                Spacing was adjusted by hand with small metal spacers, and a mistake meant replacing the the piece of type.
+                Once the page was inked and printed, the layout was fixed.
+            </p>
+        </section>
+
+        <section>
+            <h2> Desktop Publishing</h2>
+            <p> 
+                Desktop Publishin moved the same job onto a computer.
+                Designers arrange text and images ona virtual page, see the result on screen as it will be printed,
+                and change anything instantly. Like metal type, desktop publishing is built around a fixed page size,
+                so the final product is still a printed pdf page whose layout is decided by the designer.
+            </p>
+        </section>
+
+        <section>
+            <h2> HTML and CSS</h2>
+            <p>
+                HTML and CSS take a different approach to the same thing. HTML describes the structure and meaning of the content,
+                such ass headings, paragraphs and lists, while CSS describes how that content should look. There is no fixed page.
+                The browser lays the content out to suit the screen and reader's settings.
+            </p>
+        </section>
+
+        <section>
+            <h2> Smiliarities and differences</h2>
+            <p> 
+                All three approaches share the same goals: readable text, clear herarchy and good use of space and typefaces.
+                They differ in how much control the creator has. Metal tyoe and desktop publishing give exact control over a fixed page,
+                While HTML and CSS trade some of that precision for flexibility, since the same content can adapt to a phone a tablet or a large monitor.
+                Changing a design has also become far easier, from rebuilding a page by hand, to editing a layout file, to changing a single CSS rule.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p> This <span class="noun">article</span> was written for a <span> class="noun"> course</span> <span class="noun">assignment</span> on <span class="noun">web-design</span> </p>
+    </footer>
 </body>
 
 </html>
