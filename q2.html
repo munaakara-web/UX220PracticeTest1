@@ -7,11 +7,54 @@
 a) Write a short article with appropriate headings in html that describes the key differences between writing in google docs and in an html document.
 b) Use an embedded stylesheet to set the default text font face to a serif font and all heading text to sans serif.
     -->
+    <style>
+        body {
+            font-family: Georgia, "Times New Roman, serif
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, Helvitica, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
     <section id="1">
-        <!-- put article here -->
+        <h1> Writing in Google Docs vs. Writing in HTML</h1>
+
+        <p>
+            Google docs and HTML can both be used to produce a document, but they work in very different ways. 
+            The main differences come down to how content is created how its formatted abd where it ends up.
+        </p>
+        <h2>What You See vs. What You Write</h2>
+        <p>
+            Google docs is a WYSIWYG editor. You type text, clik a button to make it bold or turn it into a heading,
+            and the page loads and looks the exact way it'll be printed. In HTML, you write plain text and wrap it in tags such as 
+            <code>&lt;strong&gt;</code>. The browser reads those tags and decides how to display the content.
+        </p>
+        <h2> Structure and Styling</h2>
+        <p>
+            In Google Docs, structure adn appearance are mixed together. 
+            Choosing a heading style also changes the font size and color in one step. HTML keeps them seperate: tags describe the meaning of the content,
+            and CSS controls how it looks. This makes it easy to change the appearance of an entire site by editing one stylesheet.
+        </p>
+
+        <h2> Layout and Flexibility</h2>
+        <p>
+           A google doc is built around fixed pages with set margins and page sies.
+            An HTML page has no fixed sise. It flows to fit the screen, whether that is a phone, a tblet or a wide monitor.
+            HTMl also allows more complex layouts, interactivity, and embedded media.
+        </p>
+
+        <h2>Sharing and Publishing</h2>
+        <p> Google docs is designed for collaboration, with real-time editing, comments and version history, and yiu share a doument with a link.
+            An HTML file is published by placing it in a web server, and anyone with a browser can view it. 
+            Collaboration on HTML usuually relie on seperate tools such as version control.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+            Google docs is best for quiclky writing and sharing documents, while HTML is better when you need control over structure, design, and presentation on the web.
+        </p>
     </section>
 </body>
 
